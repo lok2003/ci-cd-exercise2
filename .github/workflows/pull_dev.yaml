@@ -1,0 +1,11 @@
+name: GitHub Actions
+on:
+  pull_request:
+      branches:
+          - dev
+jobs:
+  message-pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull_Request
+        run: echo "This is pull Request message"
