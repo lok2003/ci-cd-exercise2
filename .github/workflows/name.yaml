@@ -1,0 +1,13 @@
+name: Github-Actions
+on:
+  push:
+    branches:
+        - main
+jobs:
+    message-name:
+      runs-on: ubuntu-latest
+      steps:
+        - name: print Name
+          run: echo "Hello this is Git-Actions"
+        - name: list env
+          run: printenv
