@@ -1,0 +1,11 @@
+name: GitHub Actions
+on:
+  push:
+    branches:
+        - dev
+jobs:
+    push-dev:
+      runs-on: ubuntu-latest
+      steps:
+        - name: feature-update
+          run: echo "This is new update"
